@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 · 我的博客</title>
+  <meta name="description" content="关于我：背景、兴趣与正在做的事情。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%230f766e'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html"><span class="dot"></span>我的博客</a>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="index.html#posts">文章</a>
+        <a href="about.html" class="active">关于</a>
+        <button id="theme-toggle" aria-label="切换主题"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-bottom:24px;">
+      <span class="eyebrow">About Me</span>
+      <h1>关于<span class="accent">我</span></h1>
+    </section>
+
+    <div class="about-grid">
+      <div class="about-body">
+        <p>
+          你好，我是这个博客的主人。一名在上海读书的本科生，主修财务管理，
+          对投资、财会、技术与个人成长都保持着好奇心。
+        </p>
+        <p>
+          开这个博客的初衷很简单：把输入变成输出。读过的书、学过的知识、踩过的坑，
+          如果不写下来，很快就会忘记。写作是最高效的思考方式——它逼着我把模糊的想法讲清楚。
+        </p>
+        <p>
+          这个博客用最朴素的方式搭建：纯静态页面 + GitHub 托管 + Cloudflare Pages 免费部署。
+          没有花哨的框架，只有文字和排版，我希望它保持这样的简洁。
+        </p>
+        <p>
+          如果你有任何想聊的话题，欢迎通过下方链接找到我。
+        </p>
+      </div>
+
+      <aside class="side-card">
+        <h3>基本信息</h3>
+        <ul>
+          <li><b>坐标</b><span>上海</span></li>
+          <li><b>专业</b><span>财务管理</span></li>
+          <li><b>兴趣</b><span>投资 · 读书 · 技术</span></li>
+          <li><b>状态</b><span>本科在读</span></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p style="margin-top:12px;">© <span id="year"></span> 我的博客 · Powered by Cloudflare Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你好，世界：为什么我要开始写博客 · 我的博客</title>
+  <meta name="description" content="第一篇博客：开博动机与写作的意义。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%230f766e'/></svg>">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-logo" href="../index.html"><span class="dot"></span>我的博客</a>
+      <div class="nav-links">
+        <a href="../index.html">首页</a>
+        <a href="../index.html#posts">文章</a>
+        <a href="../about.html">关于</a>
+        <button id="theme-toggle" aria-label="切换主题"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="article">
+      <header class="article-header">
+        <h1>你好，世界：为什么我要开始写博客</h1>
+        <div class="article-meta">
+          <span>2026-09-01</span>
+          <span class="divider">·</span>
+          <span>随笔</span>
+        </div>
+      </header>
+
+      <div class="article-body">
+        <p>这是博客的第一篇文章。万事开头难，先把这个"头"开了再说。</p>
+
+        <h2>为什么突然想写博客</h2>
+        <p>原因有三，按重要性排序：</p>
+        <ul>
+          <li><strong>写作是最好的思考。</strong>很多想法在脑子里是模糊的，只有落到文字上，才会发现自己其实根本没想清楚。</li>
+          <li><strong>记录对抗遗忘。</strong>读过的书、学过的课、踩过的坑，不记录下来，三个月后就只剩"好像看过"。</li>
+          <li><strong>公开是一种监督。</strong>写在日记里没人看，容易敷衍；写成博客，至少会认真一点。</li>
+        </ul>
+
+        <h2>会写什么内容</h2>
+        <p>主题大致围绕三块：</p>
+        <ol>
+          <li><strong>投资与财会：</strong>学习笔记、市场观察、复盘心得。</li>
+          <li><strong>学习与成长：</strong>读书笔记、学习方法、职业探索。</li>
+          <li><strong>生活随笔：</strong>想到什么写什么，不设限。</li>
+        </ol>
+
+        <h2>这个博客怎么搭的</h2>
+        <p>我选择了一条最简单的路径：纯静态 HTML + CSS + JavaScript，不用任何框架和构建工具。</p>
+        <p>代码托管在 GitHub，用 Cloudflare Pages 免费部署，获得一个 <code>*.pages.dev</code> 免费域名。每次推送代码，网站自动更新。</p>
+        <blockquote>
+          越简单的技术栈，越能活得更久。博客的核心是内容，不是技术。
+        </blockquote>
+
+        <h2>最后</h2>
+        <p>希望几年后回看这里，能看见一条清晰的成长轨迹。也欢迎路过的人随时留言交流。</p>
+        <p>愿我们都能把思考写下来。</p>
+      </div>
+
+      <footer class="article-footer">
+        <div class="tags"><span class="chip">随笔</span></div>
+        <a class="back" href="../index.html">← 返回首页</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="../index.html">首页</a>
+        <a href="../about.html">关于</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p style="margin-top:12px;">© <span id="year"></span> 我的博客 · Powered by Cloudflare Pages</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

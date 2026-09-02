@@ -1,2 +1,47 @@
-# my-blog
-个人博客 - 纯静态站点，部署于 Cloudflare Pages
+# 我的博客
+
+一个纯静态的个人博客站点，托管于 Cloudflare Pages。
+
+## 技术栈
+
+- 纯 HTML + CSS + JavaScript（无框架、无构建步骤）
+- 部署：Cloudflare Pages（免费，`*.pages.dev` 域名）
+
+## 本地预览
+
+直接用浏览器打开 `index.html` 即可，或启动一个静态服务器：
+
+```bash
+# 任选其一
+python -m http.server 8080
+npx serve .
+```
+
+## 目录结构
+
+```
+blog/
+├── index.html          # 首页
+├── about.html          # 关于页
+├── 404.html            # 404 页
+├── assets/
+│   ├── css/style.css   # 全局样式（含暗色模式）
+│   └── js/main.js      # 主题切换等交互
+└── posts/              # 文章（每篇一个 HTML）
+    ├── first-post.html
+    ├── investment-notes.html
+    └── study-method.html
+```
+
+## 如何写新文章
+
+1. 复制 `posts/` 下任意一篇作为模板，改名并修改内容；
+2. 在 `index.html` 的"最新文章"列表里加入对应链接；
+3. 推送代码到 GitHub，Cloudflare Pages 自动部署。
+
+## 部署
+
+1. 将本仓库推送到 GitHub；
+2. 在 Cloudflare Pages 控制台选择 **Workers & Pages → Create → Pages → Connect to Git**；
+3. 选择本仓库，构建命令留空（纯静态，无需构建），输出目录填 `.`；
+4. 部署完成后获得 `https://<项目名>.pages.dev` 免费域名。
