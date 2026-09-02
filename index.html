@@ -3,93 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的博客 · 记录思考与成长</title>
-  <meta name="description" content="个人博客，记录关于学习、投资、生活与成长的思考。">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%230f766e'/></svg>">
+  <title>primarystar 的个人博客</title>
+  <meta name="description" content="primarystar 的个人博客：记录我的个人思考与生活。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%231a1a1a'/></svg>">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="nav-logo" href="index.html"><span class="dot"></span>我的博客</a>
-      <div class="nav-links">
-        <a href="index.html" class="active">首页</a>
-        <a href="#posts">文章</a>
-        <a href="about.html">关于</a>
-        <button id="theme-toggle" aria-label="切换主题"></button>
-      </div>
-    </nav>
-  </header>
-
   <main class="container">
-    <!-- Hero -->
-    <section class="hero">
-      <span class="eyebrow">个人博客 · Personal Blog</span>
-      <h1>记录思考，<br><span class="accent">用文字沉淀成长</span></h1>
-      <p class="subtitle">
-        这里是我的自留地，写下学习笔记、读书心得、投资复盘与生活随笔。
-        欢迎你来坐坐，我们慢慢聊。
-      </p>
-      <div class="meta">
-        <span class="chip">✍️ 不定期更新</span>
-        <span class="chip">💡 投资 · 财会 · 生活</span>
-        <span class="chip">📍 上海</span>
+
+    <header>
+      <h1 class="site-title">primarystar 的个人博客</h1>
+      <p class="site-tagline">记录我的个人思考与生活。</p>
+    </header>
+
+    <!-- 关于我（占位）：
+         把下面这段占位文字替换成你的自我介绍即可。
+         想删掉这个区块，直接删除整个 <section id="about"> 到 </section> -->
+    <section id="about">
+      <h2>关于我</h2>
+      <div class="intro-placeholder">
+        <strong>自我介绍 · 待补充。</strong><br>
+        这里将介绍我是谁、正在做什么、关注什么。等你准备好了，把这段文字替换掉就好。
       </div>
     </section>
 
-    <!-- 最新文章 -->
     <section id="posts">
-      <h2 class="section-title">最新文章</h2>
-      <div class="post-list">
-        <a class="post-item" href="posts/first-post.html">
+      <h2>文章</h2>
+      <ul class="post-list">
+        <li>
+          <a href="posts/first-post.html">你好，世界：为什么我要开始写博客</a>
           <span class="date">2026-09-01</span>
-          <span class="title">你好，世界：为什么我要开始写博客</span>
-          <span class="tag">随笔</span>
-        </a>
-        <a class="post-item" href="posts/investment-notes.html">
+        </li>
+        <li>
+          <a href="posts/investment-notes.html">我的第一份投资笔记：从记账到资产配置</a>
           <span class="date">2026-08-25</span>
-          <span class="title">我的第一份投资笔记：从记账到资产配置</span>
-          <span class="tag">投资</span>
-        </a>
-        <a class="post-item" href="posts/study-method.html">
+        </li>
+        <li>
+          <a href="posts/study-method.html">高效学习的三个笨办法</a>
           <span class="date">2026-08-18</span>
-          <span class="title">高效学习的三个笨办法</span>
-          <span class="tag">学习</span>
-        </a>
-      </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- 专栏分类 -->
-    <section>
-      <h2 class="section-title">专栏</h2>
-      <div class="grid">
-        <a class="card" href="posts/investment-notes.html">
-          <h3>投资笔记</h3>
-          <p>记录市场观察、复盘与资产配置实践。不构成投资建议，只是我的思考过程。</p>
-          <span class="card-meta">持续更新中</span>
-        </a>
-        <a class="card" href="posts/study-method.html">
-          <h3>学习与成长</h3>
-          <p>读书笔记、学习方法、技能树与职业探索的碎碎念。</p>
-          <span class="card-meta">持续更新中</span>
-        </a>
-        <a class="card" href="about.html">
-          <h3>关于我</h3>
-          <p>我的背景、兴趣与正在做的事情，以及这个博客诞生的原因。</p>
-          <span class="card-meta">了解作者</span>
-        </a>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <div class="footer-links">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于</a>
-        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <p style="margin-top:12px;">© <span id="year"></span> 我的博客 · Powered by Cloudflare Pages</p>
+      <span>© <span id="year"></span> primarystar</span>
+      <span><a href="https://github.com/primarystarr/my-blog" target="_blank" rel="noopener">GitHub</a></span>
     </div>
   </footer>
 
