@@ -9,7 +9,7 @@
 
 ## 线上地址
 
-https://my-blog-3xm.pages.dev/
+https://primarystar.pages.dev/
 
 ## 本地预览
 
@@ -29,9 +29,7 @@ blog/
 │   ├── css/style.css   # 极简全局样式
 │   └── js/main.js      # 页脚年份等
 └── posts/              # 文章（每篇一个 HTML）
-    ├── first-post.html
-    ├── investment-notes.html
-    └── study-method.html
+    └── education-monopoly.html
 ```
 
 ## 如何写新文章
